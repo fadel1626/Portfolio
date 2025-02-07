@@ -17,3 +17,23 @@ function toggleDetail (e) {
     // console.log($(target).parents(".about-exp-item")) // Mencari Parents si Target (Kedua Dilakukan)
     // console.log($(item).children(".about-exp-item-detail")) // Mencari Children, yaitu si Target (Keempat Dilakukan)
 }
+
+function onFormSubmit(e) {
+    e.preventDefault()
+    const email = $("#inputEmail")
+    const subjek = $("#inputSubjek")
+    const pesan = $("#inputPesan")
+
+    if(!$(email).val()) {
+        alert("Masukkan Email Anda")
+    } else if (!$(subjek).val()) {
+        alert("Masukkan Subjek Anda")
+    } else if (!$(pesan).val()) {
+        alert("Masukkan Pesan Anda")
+    } else {
+        alert("Form Disubmit, Terima Kasih!")
+        $(email).val("")
+        $(subjek).val("")
+        $(pesan).val("")
+    }
+}

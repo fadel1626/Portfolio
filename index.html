@@ -116,6 +116,48 @@
         </div>
     </section>
 
+    <!-- Contact -->
+    <section id="contact" class="contact container">
+        <div class="row d-flex align-items-center gap-5">
+            <div class="col">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non eius optio tempora laudantium a odio accusamus placeat modi, consequuntur ex maiores cum dicta incidunt porro ad ducimus! Soluta nam rem et amet aliquam aspernatur, architecto asperiores? Nihil dolor rerum architecto magni perspiciatis dignissimos adipisci consectetur quo praesentium, magnam hic at?</p>
+                <div class="row">
+                    <div class="col d-flex align-items-center">
+                        <img src="Assets/Gambar/Facebook.svg" alt="facebook icon">
+                        <p>Fadel Rifallah</p>
+                    </div>
+                    <div class="col d-flex align-items-center">
+                        <img src="Assets/Gambar/Instagram.svg" alt="instagram icon">
+                        <p>@fadel_rifallah</p>
+                    </div>
+                    <div class="col d-flex align-items-center">
+                        <img src="Assets/Gambar/Twitter.svg" alt="twitter icon">
+                        <p>Fadel Rifallah</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <form class="contact-form" onsubmit="onFormSubmit(event)">
+                    <div class="mb-3">
+                      <label for="inputEmail" class="form-label">Email</label>
+                      <input type="email" class="form-control" id="inputEmail" placeholder="Email Anda (Mis. budi@gmail.com)"> <!-- required untuk memberitahukan ke user jika user menekan tombol submit padahal ada kolom yang belum diisi --> 
+                      <!-- aria-describedby="emailHelp" -> Disimpan di atribut input -> Kemudian div ini diaktifkan <div id="emailHelp" class="form-text">Masukkan Email Anda dengan Benar (Mis. budi@gmail.com)</div> -->
+                    </div>
+                    <div class="mb-3">
+                      <label for="inputSubjek" class="form-label">Subjek</label>
+                      <input type="text" class="form-control" id="inputSubjek" placeholder="Subjek Anda">
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputPesan" class="form-label">Pesan</label>
+                        <input type="text" class="form-control" id="inputPesan" placeholder="Pesan Anda">
+                      </div>
+                    <div class="d-flex justify-content-center mt-5">
+                        <button type="submit" class="btn button w-25">Submit</button>
+                    </div>
+                  </form>
+            </div>
+        </div>
+    </section>
 
     <!-- JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
